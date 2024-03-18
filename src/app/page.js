@@ -1,8 +1,9 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { notoSans } from "./ui/fonts";
+import "./ui/globals.css";
 
 export default function Home() {
   return (
-    "Hello World"
+    <div className={notoSans.className}>
+    </div>
   );
 }
