@@ -1,5 +1,5 @@
 import "./ui/globals.css";
-import { openSans } from "./ui/fonts";
+import { notoSans } from "./ui/fonts";
 <link rel="icon" href="../public/favicon.ico"></link>
 
 /**Portfolio description for metadata.
@@ -34,7 +34,7 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang="en">
-      <body className={openSans.className}>
+      <body className={notoSans.className}>
         {children}
       </body>
     </html>
