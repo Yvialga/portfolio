@@ -1,9 +1,34 @@
 import "./ui/globals.css";
 import { openSans } from "./ui/fonts";
+<link rel="icon" href="../public/favicon.ico"></link>
+
+/**Portfolio description for metadata.
+ * @const
+ * @type {Array}
+ */
+const portfolioDesc = "Portfolio de Tommy BERNARD - Développeur full-stack. Disponible pour un stage courant Juin - Août. J'apprend actuellement React.js, Next.js, php, MySQL & TaildWind CSS";
+/**Metadata for open Graph protocol.
+ * @const
+ * @type {Array}
+ */
+const openGraphFields = {
+  title: "Tommy BERNARD",
+  description: "Portfolio de Tommy BERNARD, développeur full-stack en autodidacte.",
+  url: "https://yvialga.fr",
+  siteName: "Tommy BERNARD",
+  locale: "fr_FR",
+  type: "website",
+};
 
 export const metadata = {
-  title: "Portfolio - Tommy BERNARD - Développeur full-stack",
-  description: "Tommy BERNARD - Développeur full-stack. Disponible pour un stage courant Juin - Août. J'apprend actuellement React.js, Next.js, php, MySQL & TaildWind CSS",
+  title: {
+    template: "%s | Tommy BERNARD - Développeur full-stack",
+    default: "Portfolio | Tommy BERNARD - Développeur full-stack",
+  },
+  description: portfolioDesc,
+  keywords: ["Développeur full-stack", "Portfolio", "JavaScript", "React.js", "Next.js"],
+  authors: ["Yvialga", "Tommy BERNARD"],
+  openGraph: openGraphFields,
 };
 
 export default function RootLayout({children}) {
