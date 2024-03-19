@@ -4,7 +4,7 @@ import { notoSans } from "./ui/fonts";
 
 /**Portfolio description for metadata.
  * @const
- * @type {Array}
+ * @type {String}
  */
 const portfolioDesc = "Portfolio de Tommy BERNARD - Développeur full-stack. Disponible pour un stage courant Juin - Août. J'apprend actuellement React.js, Next.js, php, MySQL & TaildWind CSS";
 /**Metadata for open Graph protocol.
