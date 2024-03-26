@@ -1,6 +1,6 @@
 import "./ui/globals.css";
 import { notoSans } from "./ui/fonts";
-<link rel="icon" href="../public/favicon.ico"></link>
+<link rel="icon" href="/src/public/favicon.ico"></link>
 
 /**Portfolio description for metadata.
  * @const
@@ -26,7 +26,7 @@ export const metadata = {
     default: "Portfolio | Tommy BERNARD - Développeur full-stack",
   },
   description: portfolioDesc,
-  keywords: ["Développeur full-stack", "Portfolio", "JavaScript", "React.js", "Next.js"],
+  keywords: ["Développeur full-stack", "Portfolio", "JavaScript", "React.js", "Next.js", "TailWind CSS"],
   authors: ["Yvialga", "Tommy BERNARD"],
   openGraph: openGraphFields,
 };
@@ -34,7 +34,7 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang="en">
-      <body className={notoSans.className}>
+      <body className={`${notoSans.className} h-screen`}>
         {children}
       </body>
     </html>
