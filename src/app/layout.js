@@ -36,6 +36,7 @@ export default function RootLayout({children}) {
     <html lang="en">
       <body className={`${notoSans.className} h-screen`}>
         {children}
+        <noscript>Veuillez activer JavaScript. / Please enable JavaScript.</noscript>
       </body>
     </html>
   );
