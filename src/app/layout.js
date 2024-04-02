@@ -1,6 +1,6 @@
-import "./ui/globals.css";
-import { notoSans } from "./ui/fonts";
-<link rel="icon" href="/src/public/favicon.ico"></link>
+import "../assets/styles/globals.css";
+import { notoSans } from "../assets/fonts/fonts";
+<link rel="icon" href="/portfolio/src/assets/favicon.ico"></link>
 
 /**Portfolio description for metadata.
  * @const

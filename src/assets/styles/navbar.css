@@ -1,3 +1,13 @@
+@import "./globals.css";
+
+/* _______________ Colour chevrons _______________ */
+nav li h3:hover + svg, nav li h3:hover svg{
+  @apply text-black/90 active:text-black/90;
+}
+
+
+/* _______________ Burger icon _______________ */
+
 .icon-menu {
   --gap: 5px;
   --height-bar: 0.25rem;
