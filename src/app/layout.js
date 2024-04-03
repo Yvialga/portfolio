@@ -1,6 +1,6 @@
 import "../assets/styles/globals.css";
 import { notoSans } from "../assets/fonts/fonts";
-<link rel="icon" href="/portfolio/src/assets/favicon.ico"></link>
+<link rel="icon" href="./favicon.ico"></link>
 
 /**Portfolio description for metadata.
  * @const

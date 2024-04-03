@@ -48,7 +48,7 @@ export default function NavBar() {
     function onCheckboxChange () {
         if (isChecked) {
             setChecked(false);
-        } else {    // Open menu
+        } else {
             setChecked(true);
         }
     }
@@ -122,7 +122,7 @@ function BurgerBars({index}) {
     );
 }
 
-/**Return the menu JSX item with his title and his correct redirection.
+/**Return the JSX menu item with his title and his correct redirection.
  * 
  * @param {Object} menuItemsLink Specifications of the link.
  * @param {string} menuItemsLink.title Title of the menu item.
