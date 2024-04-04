@@ -71,12 +71,11 @@ export default function NavBar() {
 }
 
 /**
- * 
  * @returns {import("react").ReactElement} The Logo.
  */
 function Logo() {
     return (
-        <div className="justify-self-start text-white font-bold text-center text-xl hover:opacity-70">
+        <div className="justify-self-start text-white font-bold text-center text-xl opacity-85 hover:opacity-100">
             <h2>
                 <Link href={"#"}>
                     Tommy <br />
@@ -167,6 +166,7 @@ function MenuItems({title, link, hasSubMenu}) {
                         e.preventDefault();
                     }
                 }
+            
             >
                 <h3 className={`${menuItemsClasses}`}>
                     {title}
@@ -181,7 +181,7 @@ function MenuItems({title, link, hasSubMenu}) {
                 <ul className={`${isOpen ? "block" : "hidden"} md:absolute md:bg-primary md:border-secondary md:border-4 rounded-3xl -translate-y-2`} >
                     {
                         [...Array(hasSubMenu.length)].map((e, i) => (
-                            <li key={i}>
+                            <li>
                                 <Link href={link} className={`${menuItemsClasses} text-sm ${hasSubMenu[i].hasSubMenu ? "underline" : "no-underline"}`}>
                                     {hasSubMenu[i].title}
                                 </Link>
