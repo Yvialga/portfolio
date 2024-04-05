@@ -54,7 +54,7 @@ export default function NavBar() {
     }
 
     return (
-        <nav className="sticky bg-primary flex flex-wrap items-center justify-between w-full py-4 md:py-0
+        <nav className="sticky top-0 bg-primary flex flex-wrap items-center overflow-x-clip justify-between w-full py-4 md:py-0
         text-lg px-4 shadow-2xl">
             <Logo />
             <BurgerIcon handleChange={onCheckboxChange} />
