@@ -1,6 +1,6 @@
 @import "./globals.css";
 
-/* _______________ Colour chevrons _______________ */
+/* _______________ Colour chevrons of sub-menu _______________ */
 nav li h3:hover + svg, nav li h3:hover svg{
   @apply text-black/90 active:text-black/90;
 }
