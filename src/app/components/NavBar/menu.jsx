@@ -107,14 +107,13 @@ function SubMenuItem({menuItem, handleHoveringOfMenuItems, menuState}) {
         >
             <h3 className={`${MENU_ITEMS_CLASSES}`}>
                 {menuItem.title}
-                <svg className={`h-5 w-5 ml-1 md:inline-block hidden text-white`} viewBox="0 0 20 20"  fill="currentColor" aria-hidden="true">
+                <svg className={`${menuState ? "-rotate-90" : "rotate-0"} transition h-5 w-5 ml-1 md:inline-block hidden text-white`} viewBox="0 0 20 20"  fill="currentColor" aria-hidden="true">
                     <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                 </svg>
             </h3>
-            <svg className={`h-5 w-5 ml-1 block md:hidden -translate-y-12 float-right mr-1 text-white`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg className={`${menuState ? "-rotate-90" : "rotate-0"} transition h-5 w-5 ml-1 block md:hidden -translate-y-12 float-right mr-1 text-white`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
             </svg>
-            {/* TODO : isOpen */}
             <ul className={`${menuState ? "block" : "hidden"} md:absolute md:bg-primary md:border-secondary md:border-4 rounded-3xl -translate-y-2`} >
                 {
                     [...Array(menuItem.hasSubMenu.length)].map((e, i) => (
