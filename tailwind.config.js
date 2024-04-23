@@ -33,6 +33,9 @@ module.exports = {
       animation: {
         scrollingText: 'scrollingText 45s infinite linear',
         'bounce-increase': "bounce-increase 1s infinite"
+      },
+      screens: {
+        'v-sm': '500px', // very-small
       }
     },
   },
