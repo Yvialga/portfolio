@@ -19,16 +19,14 @@ module.exports = {
         },
         'bounce-increase': {
           '0%, 100%' : {
-            transform: "translateY(-70%)",
+            transform: "translateY(-100%)",
             "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)"
           },
-          '30%, 60%': {
-            opacity: 1
+          '35%, 65%': {
           },
           '50%': {
             transform: "translateY(0)",
             "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
-            opacity: 0
           }
         }
       },
