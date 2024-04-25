@@ -91,5 +91,27 @@ export function ChooseTheRightLogo({toolName}) {
             break;
     }
     
-    return <Image src={imagePath} alt={`Logo de ${toolName}`} className="w-8 h-8" width={35} height={35}/>
+    return <Image src={imagePath} alt={`Logo de ${toolName}`} className={`h-8 rounded-xl ${imagePath == java ? "w-6" : "w-8"}`} width={35} height={35}/>
+}
+
+/**
+ * 
+ * @param {Object} param0 
+ * @param {String} param0.sectionName
+ */
+export function SearchTheRightIcon({sectionName}) {
+    let iconPath;
+    let formattedsectionTextToTest = sectionName.toLowerCase();
+    switch (formattedsectionTextToTest) {
+        case "compétences":
+            iconPath = diamond;
+            break;
+        case "projets":
+            iconPath = clipboard;
+            break;
+        default:
+            break;
+    }
+
+    return <Image src={iconPath} alt={`Logo de ${sectionName}`} className={`h-6 w-6`} width={35} height={35}/>
 }
