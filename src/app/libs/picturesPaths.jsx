@@ -30,7 +30,7 @@ import tailwind from "../../assets/pictures/logos/tailwindcss-mark.svg";
  * @param {String} describingText.toolName Tool name to return the right image.
  * @returns {import("react").ReactElement}
  */
-export function ChooseTheRightImage({toolName}) {
+export function ChooseTheRightLogo({toolName}) {
     let formattedTextToTest = toolName.toLowerCase().replaceAll(".", "");
     let imagePath;
 
