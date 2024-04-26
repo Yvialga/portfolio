@@ -11,34 +11,34 @@ import { openSans } from "../../../assets/fonts/fonts";
 const NAVBAR_ITEMS = [
     {
         key: 2,
-        title: "À propos",
-        link: "#",  // TODO
+        title: "à propos",
+        link: "",  // TODO
         hasSubMenu: false,
     }, {
         key: 3,
-        title: "Compétences",
+        title: "compétences",
         link: "#",  // TODO
         hasSubMenu: false,
     }, {
         key: 4,
-        title: "Projets",           //exemple de sM https://tailwindui.com/components/application-ui/elements/dropdowns
+        title: "projets",           //exemple de sM https://tailwindui.com/components/application-ui/elements/dropdowns
         link: "",           // Link property is let empty if is a sub-menu.
         hasSubMenu: [
             {
                 key: 40,
-                title: "Développement Web",
+                title: "développement web",
                 link: "",
                 hasSubMenu: false,
             }, {
                 key: 41,
-                title: "Game Design",
+                title: "game design",
                 link: "",
                 hasSubMenu: false,
             }
         ],
     }, {
         key: 5,
-        title: "Contact",
+        title: "contact",
         link: "",    // TODO / redirect towards contact page
         hasSubMenu: false,
     }
@@ -92,7 +92,7 @@ function MenuItems({menuItem, onHover, menuState}) {
     } else {
         return (
             <li key={menuItem.key}>
-                <Link href={menuItem.link} className={MENU_ITEMS_CLASSES}>{menuItem.title}</Link>
+                <Link href={menuItem.link} id={menuItem.title} className={MENU_ITEMS_CLASSES}>{menuItem.title}</Link>
             </li>
         );
     }
@@ -105,9 +105,9 @@ function SubMenuItem({menuItem, handleHoveringOfMenuItems, menuState}) {
             onPointerDown={ () => { handleHoveringOfMenuItems(); } }
             // onPointerLeave={ () => { handleHoveringOfMenuItems(); } }
         >
-            <h3 className={`${MENU_ITEMS_CLASSES}`}>
+            <h3 className={`${MENU_ITEMS_CLASSES} group`}>
                 {menuItem.title}
-                <svg className={`${menuState ? "-rotate-90" : "rotate-0"} transition h-5 w-5 ml-1 md:inline-block hidden text-white`} viewBox="0 0 20 20"  fill="currentColor" aria-hidden="true">
+                <svg className={`${menuState ? "-rotate-90" : "rotate-0"} transition h-5 w-5 ml-1 ${menuState ? "animate-none" : "group-hover:animate-bounce"} md:inline-block hidden text-white`} viewBox="0 0 20 20"  fill="currentColor" aria-hidden="true">
                     <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                 </svg>
             </h3>
