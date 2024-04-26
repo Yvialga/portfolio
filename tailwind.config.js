@@ -36,6 +36,7 @@ module.exports = {
       },
       screens: {
         'v-sm': '500px', // very-small
+        '2md': '992px', // 
       }
     },
   },
