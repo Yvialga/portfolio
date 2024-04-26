@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { SearchTheRightIcon } from "../libs/picturesPaths";
+import { SearchTheRightIcon } from "../../libs/picturesPaths";
 
 const SKILLS = "compétences";
 

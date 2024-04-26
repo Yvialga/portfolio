@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
-import { ChooseTheRightLogo, SearchTheRightIcon } from "../../libs/picturesPaths";
-import { SectionButton } from "../sectionButton";
+import { ChooseTheRightLogo } from "../../libs/picturesPaths";
+import { SectionButton } from "./sectionButton";
 
 // any tool added must be also added in libs/picturesPaths.jsx.
 const HARD_SKILLS = [

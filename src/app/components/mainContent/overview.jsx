@@ -37,9 +37,6 @@ export default function Overview() {
             <div className="scroll-indicator relative md:absolute md:translate-y-[700%] mb-4 w-6 h-12 border-2 border-white z-20 rounded-3xl self-center
                             before:relative before:content-[''] before:animate-bounce-increase before:bg-white  before:w-4 before:h-4
                             before:inline-block before:rounded-full before:left-[2px] before:top-[20px] md:left-1/2">
-                                {/* Pourquoi before:-translate-x-1/2 before:left-1/2 ne fonctionnent pas*/}
-                                {/* https://stackoverflow.com/questions/48563179/centering-a-position-absolute-element-using-translatex-50-doesnt-center-div?rq=3
-                                https://stackoverflow.com/questions/40453751/css-translatex-50-not-working-as-expected */}
             </div>
             <ul className="flex md:flex-wrap gap-x-1.5 bg-primary w-max py-2.5 md:px-1 z-20 md:w-full whitespace-nowrap
                             animate-scrollingText md:animate-none md:justify-center">
