@@ -21,7 +21,7 @@ import reactjs from "../../assets/pictures/logos/reactjs-logo.png";
 import sass from "../../assets/pictures/logos/sass-logo.png";
 import vscode from "../../assets/pictures/logos/vscode-logo.png";
 import jira from "../../assets/pictures/logos/jira-logo.png";
-import sql from "../../assets/pictures/logos/sql-logo.png";
+import sql from "../../assets/pictures/logos/sql-logo.png"; // by Nadiinko
 import tailwind from "../../assets/pictures/logos/tailwindcss-mark.svg";
 
 /**Return the next component 'image' with path that point to the right path.
@@ -91,7 +91,7 @@ export function ChooseTheRightLogo({toolName}) {
             break;
     }
     
-    return <Image src={imagePath} alt={`Logo de ${toolName}`} className={`h-8 rounded-xl ${imagePath == java ? "w-6" : "w-8"}`} width={35} height={35}/>
+    return <Image src={imagePath} alt={`Logo de ${toolName}`} className={`h-8 rounded-xl text-center align-bottom ${imagePath == java ? "w-6" : "w-8"}`} width={35} height={35}/>
 }
 
 /**

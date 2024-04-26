@@ -19,6 +19,6 @@ export function SectionButton({handleClick, handleClickState}) {
             </div>
             <p className={`uppercase font-semibold text-white tracking-wider ${handleClickState ? "hidden" : "block"}`}>SKILLS</p>
         </button>
-        <p className="italic text-gray-500">Cliquez pour {handleClickState ? "montrer" : "cacher"} </p>
+        <p className="italic text-white">Cliquez pour {handleClickState ? "montrer" : "cacher"} </p>
     </div>;
 }

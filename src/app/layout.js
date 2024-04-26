@@ -33,7 +33,7 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang="en">
-      <body className={`${notoSans.className} overflow-x-clip`}>
+      <body className={`${notoSans.className} overflow-x-clip bg-primary/80`}>
         {children}
         <noscript>Veuillez activer JavaScript. / Please enable JavaScript.</noscript>
       </body>
