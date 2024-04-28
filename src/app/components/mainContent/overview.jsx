@@ -32,7 +32,7 @@ export default function Overview() {
                     >tommy <span className="uppercase">bernard</span></em>,
                 </p>
                 <h1 className="font-extrabold bg-primary p-1.5 w-max px-2.5 rounded-3xl z-20">Développeur web Full Stack</h1>
-                <p className="font-bold z-20 text-center md:text-black md:">Développe des sites web visibles sur ordinateurs, tablettes, et téléphones</p>
+                <p className="font-bold z-20 text-center md:text-black px-2">Développe des sites web pour ordinateurs, tablettes, et téléphones</p>
             </div>
             <div className="scroll-indicator relative md:absolute md:translate-y-[700%] mb-4 w-6 h-12 border-2 border-white z-20 rounded-3xl self-center
                             before:relative before:content-[''] before:animate-bounce-increase before:bg-white  before:w-4 before:h-4
