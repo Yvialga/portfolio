@@ -1,7 +1,8 @@
 'use client'
-import { useState } from "react";
 import { ChooseTheRightLogo } from "../../libs/picturesPaths";
 import { SectionButton } from "./sectionButton";
+import ContentSeparatorBar from "../../libs/contentSeparatorBar";
+import { useState } from "react";
 
 // any tool added must be also added in libs/picturesPaths.jsx.
 const HARD_SKILLS = [
@@ -37,6 +38,8 @@ const HARD_SKILLS = [
     }
 ]
 
+const SKILLS = "skills";
+
 export default function Skills() {
     const [sectionButtonState, setSectionButtonState] = useState(false);
 
@@ -45,13 +48,12 @@ export default function Skills() {
     }
 
     return <section className="my-8 md:my-20">
-        <SectionButton handleClick={handleDisplayOfSectionButton} handleClickState={sectionButtonState}/>
-        <div>
+        <SectionButton sectionName={SKILLS} handleClick={handleDisplayOfSectionButton} handleClickState={sectionButtonState}/>
         {
             [...Array(HARD_SKILLS.length)].map((e, i) => {
                 return <div className="flex flex-wrap flex-col items-center">
-                    <section className={`${sectionButtonState ? "hidden" : "block"}`}>
-                        <h3 className="uppercase font-semibold text-center py-6 text-white">{HARD_SKILLS[i].title}</h3>
+                    <section className={`${sectionButtonState ? "hidden" : "block"} w-full`}>
+                        <h3 className="uppercase font-semibold text-center py-6 text-white tracking-wider">{HARD_SKILLS[i].title}</h3>
                         <div className="flex flex-wrap px-[10%] v-sm:px-[10%] gap-y-4 gap-x-4 justify-start v-sm:justify-center">
                             {
                                 [...Array(HARD_SKILLS[i].skills_list.length)].map((e, j) => {
@@ -60,14 +62,10 @@ export default function Skills() {
                             }
                         </div>
                     </section>
-                    {
-                        ((++i) < HARD_SKILLS.length) ? <hr className={`rotate-90 transform translate-y-2 border-none bg-secondary h-1 w-10 my-8 text-center ${sectionButtonState ? "hidden" : "block"}`} />
-                            : <hr className="hidden" />
-                    }
+                    <ContentSeparatorBar iteration={i} arraySize={HARD_SKILLS.length} handleDisplayBar={sectionButtonState} />
                 </div>;
             })
         }
-        </div>
     </section>;
 }
 

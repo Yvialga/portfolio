@@ -103,10 +103,10 @@ export function SearchTheRightIcon({sectionName}) {
     let iconPath;
     let formattedsectionTextToTest = sectionName.toLowerCase();
     switch (formattedsectionTextToTest) {
-        case "compétences":
+        case "skills":
             iconPath = diamond;
             break;
-        case "projets":
+        case "projects":
             iconPath = clipboard;
             break;
         default:
