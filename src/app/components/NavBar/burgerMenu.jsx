@@ -12,7 +12,11 @@ export default function BurgerIcon({handleChange}) {
         <div className="md:hidden w-max float-right z-50">
             {/* import 'switch' burger icon https://uiverse.io/Creatlydev/pretty-gecko-71 */}
             <input className="check-icon  hidden" id="check-icon" name="check-icon" type="checkbox" onChange={handleChange}/>
-            <label className="icon-menu  cursor-pointer relative flex flex-col bg-secondary px-3 w-12 rounded-full " htmlFor="check-icon">
+            <label
+                tabIndex={0}
+                className="icon-menu  cursor-pointer relative flex flex-col bg-secondary px-3 w-12 rounded-full "
+                htmlFor="check-icon"
+            >
                 {
                     [...Array(barsNumber)].map((e, i) => (
                         <BurgerBars index={i+1} key={i}/>

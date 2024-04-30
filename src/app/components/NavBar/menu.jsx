@@ -46,7 +46,7 @@ const NAVBAR_ITEMS = [
 
 const MENU_ITEMS_CLASSES = `text-white/90 hover:bg-secondary/95 active:bg-secondary/95 hover:text-black/90 active:text-black/90
                             font-bold uppercase block underline decoration-secondary underline-offset-8 hover:no-underline md:no-underline decoration-4
-                            delay-50 duration-200 py-6 pr-6 sm:pr-10 rounded-3xl md:px-2 md:mx-2 md:py-4 md:my-2 md:text-left cursor-pointer`;
+                            delay-50 duration-200 py-6 pr-6 v-sm:pr-12 rounded-3xl md:px-2 md:mx-2 md:py-4 md:my-2 md:text-left cursor-pointer`;
 
 /** TODO
  * 
@@ -105,21 +105,20 @@ function SubMenuItem({menuItem, handleHoveringOfMenuItems, menuState}) {
             onPointerDown={ () => { handleHoveringOfMenuItems(); } }
             // onPointerLeave={ () => { handleHoveringOfMenuItems(); } }
         >
-            <h3 className={`${MENU_ITEMS_CLASSES} group`}>
+            <h3 className={`${MENU_ITEMS_CLASSES} group`} tabIndex={0}>
                 {menuItem.title}
                 <svg className={`${menuState ? "-rotate-90" : "rotate-0"} transition h-5 w-5 ml-1 ${menuState ? "animate-none" : "group-hover:animate-bounce"} md:inline-block hidden text-white`} viewBox="0 0 20 20"  fill="currentColor" aria-hidden="true">
                     <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                 </svg>
             </h3>
-            <svg className={`${menuState ? "-rotate-90" : "rotate-0"} transition h-5 w-5 ml-1 block md:hidden -translate-y-12 float-right mr-1 text-white`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg className={`${menuState ? "-rotate-90" : "rotate-0"} transition h-5 w-5 ml-1 block md:hidden -translate-y-12 float-right mr-1 v-sm:mr-4 text-white`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
             </svg>
             <ul className={`${menuState ? "block" : "hidden"} md:absolute md:bg-primary md:border-secondary md:border-4 rounded-3xl -translate-y-2`} >
                 {
                     [...Array(menuItem.hasSubMenu.length)].map((e, i) => (
                         <li>
-                            <Link href={menuItem.link} className={`${MENU_ITEMS_CLASSES} text-sm underline leading-[250%]`}>
-                            {/* <Link href={menuItem.link} className={`${MENU_ITEMS_CLASSES} text-sm ${menuItem.hasSubMenu[i].hasSubMenu ? "underline" : "no-underline"}`}> */}
+                            <Link href={menuItem.link} className={`${MENU_ITEMS_CLASSES} text-sm underline leading-[250%] v-sm:pr-16`}>
                                 {menuItem.hasSubMenu[i].title}
                             </Link>
                         </li>
