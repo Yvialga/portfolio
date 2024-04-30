@@ -5,12 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: { //setting custom colors in extend, then in colors, without add colors {} after theme for not to overwrite the default palette.
+      animation: {
+        scrollingText: 'scrollingText 45s infinite linear',
+        'bounce-increase': "bounce-increase 1s infinite"
+      },
       colors: {
         primary: "rgb(var(--primary))", //navy blue
         secondary: 'rgb(var(--secondary))', //gold
-      },
-      textUnderlineOffset: {
-        5: '5px',
       },
       keyframes: {
         scrollingText: {
@@ -30,14 +31,13 @@ module.exports = {
           }
         }
       },
-      animation: {
-        scrollingText: 'scrollingText 45s infinite linear',
-        'bounce-increase': "bounce-increase 1s infinite"
-      },
       screens: {
         'v-sm': '500px', // very-small
-        '2md': '992px', // 
-      }
+        'md2': '992px', // 
+      },
+      textUnderlineOffset: {
+        5: '5px',
+      },
     },
   },
   plugins: [],
