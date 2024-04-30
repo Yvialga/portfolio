@@ -9,6 +9,9 @@ module.exports = {
         scrollingText: 'scrollingText 45s infinite linear',
         'bounce-increase': "bounce-increase 1s infinite"
       },
+      boxShadow : {
+        "3xl": "0 0 20px 10px rgba(0, 0, 0, 0.1)"
+      },
       colors: {
         primary: "rgb(var(--primary))", //navy blue
         secondary: 'rgb(var(--secondary))', //gold
