@@ -4,20 +4,18 @@ import "../../../assets/styles/navbar.css";
 import { useState } from "react";
 import { openSans } from "../../../assets/fonts/fonts";
 
-// SI aucune solution trouvé, peut-être chercher un tuto comment faire un menu av+ sous menu en react
-
 /**
  * @type {Array.<{title: string, link: string, hasSubMenu: boolean}>} */
 const NAVBAR_ITEMS = [
     {
         key: 2,
         title: "à propos",
-        link: "",  // TODO
+        link: "/#overview",
         hasSubMenu: false,
     }, {
         key: 3,
         title: "compétences",
-        link: "#",  // TODO
+        link: "/#skills",
         hasSubMenu: false,
     }, {
         key: 4,
@@ -39,7 +37,7 @@ const NAVBAR_ITEMS = [
     }, {
         key: 5,
         title: "contact",
-        link: "",    // TODO / redirect towards contact page
+        link: "/#contact",
         hasSubMenu: false,
     }
 ];
@@ -107,7 +105,7 @@ function SubMenuItem({menuItem, handleHoveringOfMenuItems, menuState}) {
         >
             <h3 className={`${MENU_ITEMS_CLASSES} group`} tabIndex={0}>
                 {menuItem.title}
-                <svg className={`${menuState ? "-rotate-90" : "rotate-0"} transition h-5 w-5 ml-1 ${menuState ? "animate-none" : "group-hover:animate-bounce"} md:inline-block hidden text-white`} viewBox="0 0 20 20"  fill="currentColor" aria-hidden="true">
+                <svg className={`${menuState ? "-rotate-90" : "rotate-0"} transition h-5 w-5 ml-1 md:inline-block hidden text-white`} viewBox="0 0 20 20"  fill="currentColor" aria-hidden="true">
                     <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                 </svg>
             </h3>

@@ -47,7 +47,7 @@ export default function Skills() {
         setSectionButtonState(!sectionButtonState);
     }
 
-    return <section className="my-8 md:my-20">
+    return <section id="skills" className="my-8 md:my-20">
         <SectionButton sectionName={SKILLS} handleClick={handleDisplayOfSectionButton} handleClickState={sectionButtonState}/>
         {
             [...Array(HARD_SKILLS.length)].map((e, i) => {

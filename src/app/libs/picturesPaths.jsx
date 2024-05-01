@@ -85,7 +85,9 @@ export function ChooseTheRightLogo({toolName}) {
             case "jira":
             imagePath = jira;
             break;
-        
+            case "linkedin":
+            imagePath = linkedin;
+            break;
         default:
             imagePath = html;
             break;
@@ -109,9 +111,18 @@ export function SearchTheRightIcon({sectionName}) {
         case "projects":
             iconPath = clipboard;
             break;
+        case "contact":
+            iconPath = chat;
+            break;
+        case "mail":
+            iconPath = mail;
+            break;
+        case "arrow":
+            iconPath = upArrow;
+            break;
         default:
             break;
     }
 
-    return <Image src={iconPath} alt={`Logo de ${sectionName}`} className={`h-6 w-6`} width={35} height={35}/>
+    return <Image src={iconPath} alt={`Logo de ${sectionName}`} className={`h-8 w-8`} width={35} height={35}/>
 }

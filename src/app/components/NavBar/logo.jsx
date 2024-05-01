@@ -9,7 +9,7 @@ export default function Logo() {
         <div className="text-white/90 hover:bg-secondary/95 active:bg-secondary/95 hover:text-black/90 active:text-black/90
                         font-bold text-center text-xl rounded-2xl py-1 px-2">
             <h2>
-                <Link href={"#"}>
+                <Link href={"/"}>
                     Tommy <br />
                     <em className="not-italic uppercase">Bernard</em>
                 </Link>
