@@ -1,9 +1,9 @@
 'use client'
 import { useState } from "react";
-import Skills from "./skills";
+import Skills from "./skillsSection";
 import Overview from "./overview";
-import Projects from "./projects";
-import Contact from "./contact";
+import Projects from "./projectsSection";
+import Contact from "./contactSection";
 
 export default function MainContent() {
     const [sectionButtonState, setSectionButtonState] = useState(false);
