@@ -32,7 +32,7 @@ export default function Contact() {
         setContactButtonState(!contactButtonState);
     }
 
-    return <section id="contact" className="mb-8">
+    return <section id="contacts" className="mb-8">
         <SectionButton sectionName={SECTION_NAME} handleClick={toggleDisplayOfContactSection} handleClickState={contactButtonState} />
         <div className={`my-8 gap-y-4 flex flex-col pl-4 sm:pl-0 sm:flex-row sm:justify-center sm:gap-x-6 ${contactButtonState ? "hidden" : "block"}`}>
             {[...Array(CONTACTS.length)].map((e, i) =>
@@ -51,8 +51,8 @@ export default function Contact() {
  * @returns {import("react").ReactElement} 
  */
 function ContactItem({img, description, href}) {
-    return <Link href={href} className="bg-white rounded-3xl flex w-max px-[0.75rem] py-[0.40rem] gap-x-2 items-center hover:shadow-3xl">
-        <p className="first-letter:capitalize w-auto min-w-max font-semibold">{description}</p>
+    return <Link href={href} className="bg-white rounded-3xl flex w-auto h-min px-[0.75rem] py-[0.40rem] gap-x-2 items-center hover:shadow-3xl">
+        <p className="first-letter:capitalize h-min w-auto min-w-max font-semibold">{description}</p>
         {img}
     </Link>
 }

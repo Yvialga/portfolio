@@ -2,7 +2,6 @@
 import Link from "next/link";
 import "../../../assets/styles/navbar.css";
 import { useState } from "react";
-import { openSans } from "../../../assets/fonts/fonts";
 
 /**
  * @type {Array.<{title: string, link: string, hasSubMenu: boolean}>} */
@@ -37,7 +36,7 @@ const NAVBAR_ITEMS = [
     }, {
         key: 5,
         title: "contact",
-        link: "/#contact",
+        link: "/#contacts",
         hasSubMenu: false,
     }
 ];
