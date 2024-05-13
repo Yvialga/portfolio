@@ -36,7 +36,7 @@ export default function Overview() {
             </div>
             <div className="scroll-indicator relative md:absolute md:transform md:translate-y-[650%] lg:translate-y-[580%] mb-4 w-6 h-12 border-2 border-white z-50 rounded-3xl self-center
                             before:relative before:content-[''] before:animate-bounce-increase before:bg-white before:z-50 before:w-4 before:h-4
-                            before:inline-block before:rounded-full before:left-[1px] v-sm:before:left-[2px] before:top-[20px] md:left-1/2">
+                            before:inline-block before:rounded-full before:left-[2px] before:top-[20px] md:left-1/2">
             </div>
             <ul className="flex md:flex-wrap gap-x-1.5 bg-primary w-max py-2.5 md:px-1 z-20 md:w-full whitespace-nowrap
                             animate-scrollingText md:animate-none md:justify-center md:rounded-b-[2.5rem]">
