@@ -51,7 +51,7 @@ export default function Contact() {
  * @returns {import("react").ReactElement} 
  */
 function ContactItem({img, description, href}) {
-    return <Link href={href} className="bg-white rounded-3xl flex w-auto h-min px-[0.75rem] py-[0.40rem] gap-x-2 items-center hover:shadow-3xl">
+    return <Link href={href} className="bg-white rounded-3xl flex w-max whitespace-nowrap h-min px-[0.75rem] py-[0.40rem] gap-x-2 items-center hover:shadow-3xl">
         <p className="first-letter:capitalize h-min w-auto min-w-max font-semibold">{description}</p>
         {img}
     </Link>
