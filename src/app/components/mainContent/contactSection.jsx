@@ -9,7 +9,7 @@ const CONTACTS = [
         name: "mail",
         desc: "envoyez moi un mail",
         img: <SearchTheRightIcon sectionName={"mail"} className={"w-6 h-6"}/>,
-        link: "/contact"
+        link: "mailto:contact@yvialga.fr"
     },
     {
         name: "github",
@@ -19,7 +19,7 @@ const CONTACTS = [
     },
     {
         name: "linkedin",
-        desc: "mon réseaux",
+        desc: "mon réseau",
         img: <ChooseTheRightLogo toolName="linkedin" className={"w-6 h-6"}/>,
         link: "https://www.linkedin.com/in/tommybernard/"
     },
