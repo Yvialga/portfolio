@@ -17,23 +17,23 @@ const NAVBAR_ITEMS = [
         link: "/#skills",
         hasSubMenu: false,
     }, {
-        key: 4,
-        title: "projets",           //exemple de sM https://tailwindui.com/components/application-ui/elements/dropdowns
-        link: "",           // Link property is let empty if is a sub-menu.
-        hasSubMenu: [
-            {
-                key: 40,
-                title: "développement web",
-                link: "",
-                hasSubMenu: false,
-            }, {
-                key: 41,
-                title: "game design",
-                link: "",
-                hasSubMenu: false,
-            }
-        ],
-    }, {
+    //     key: 4,
+    //     title: "projets",           //exemple de sM https://tailwindui.com/components/application-ui/elements/dropdowns
+    //     link: "",           // Link property is let empty if is a sub-menu.
+    //     hasSubMenu: [
+    //         {
+    //             key: 40,
+    //             title: "développement web",
+    //             link: "",
+    //             hasSubMenu: false,
+    //         }, {
+    //             key: 41,
+    //             title: "game design",
+    //             link: "",
+    //             hasSubMenu: false,
+    //         }
+    //     ],
+    // }, {
         key: 5,
         title: "contact",
         link: "/#contacts",

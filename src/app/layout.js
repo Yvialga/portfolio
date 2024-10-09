@@ -5,14 +5,14 @@ import { notoSans } from "../assets/fonts/fonts";
  * @const
  * @type {String}
  */
-const portfolioDesc = "Portfolio de Tommy BERNARD - Développeur web full-stack. Disponible pour un stage sur la plage Juin - Août. J'apprend actuellement React.js, Next.js, php, MySQL & TaildWind CSS";
+const portfolioDesc = "Développeur web - Portfolio. Au cours de mes expériences, j'ai pu travailler sur des sites webs ou bien des SaaS";
 /**Metadata for open Graph protocol.
  * @const
  * @type {Array}
  */
 const openGraphFields = {
   title: "Tommy BERNARD",
-  description: "Portfolio de Tommy BERNARD, développeur full-stack en autodidacte.",
+  description: "Tommy BERNARD | Portfolio. Développeur full-stack autodidacte.",
   url: "https://yvialga.fr",
   siteName: "Tommy BERNARD",
   locale: "fr_FR",
@@ -32,8 +32,8 @@ export const metadata = {
 
 export default function RootLayout({children}) {
   return (
-    <html lang="en">
-      <body className={`${notoSans.className} overflow-x-clip bg-primary/80`}>
+    <html lang="fr">
+      <body className={`${notoSans.className} overflow-x-clip bg-primary/80 min-h-screen`}>
         {children}
         <noscript>Veuillez activer JavaScript. / Please enable JavaScript.</noscript>
       </body>
