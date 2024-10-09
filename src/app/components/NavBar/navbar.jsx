@@ -5,10 +5,6 @@ import Logo from "./logo";
 import BurgerIcon from "./burgerMenu";
 import Menu from "./menu";
 
-// https://borstch.com/blog/javascript-touch-events-and-mobile-specific-considerations
-// https://duckduckgo.com/?q=how+to+handle+the+behavior+of+buttons%2Flinks+when+mobile+user+clicked&t=ffab&ia=web
-// https://www.youtube.com/watch?v=nS-kXNmB4Gg&pp=ygUwaG93IHRvIG1ha2Ugc2Nyb2xsIGRvd24gY29tcG9uZW50IHRhaWx3aW5kIHJlYWN0
-
 /**Return the responsive navigation bar. Conditional operator shows or hides menu's items on mobile device.
  * 
  * @exports
