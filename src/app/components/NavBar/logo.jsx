@@ -6,7 +6,7 @@ import Link from "next/link";
  */
 export default function Logo() {
     return (
-        <div className="text-white/90 hover:bg-secondary/95 active:bg-secondary/95 hover:text-black/90 active:text-black/90
+        <div className="text-white/90 hover:scale-110 transition-all
                         font-bold text-center text-xl rounded-2xl py-1 px-2">
             <h2>
                 <Link href={"/"}>

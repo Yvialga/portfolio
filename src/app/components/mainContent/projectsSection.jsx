@@ -1,9 +1,14 @@
 'use client'
-import {SectionButton} from "./sectionButton"
-import { PROJECTS_LIST } from "../../libs/projectsList";
+
 import { useState } from "react";
+import { SectionButton } from "./sectionButton"
+import { PROJECTS_LIST } from "../../libs/projectsList";
 import Image from "next/image";
 import ContentSeparatorBar from "../../libs/contentSeparatorBar";
+import BookiModalButton from "../ui/BookiModalButton";
+import PortfolioModalButton from "../ui/PortfolioModalButton";
+import DgtButton from "../ui/DgtButton";
+import CanoeButton from "../ui/CanoeButton";
 
 const PROJECTS = "projects";
 
@@ -32,7 +37,7 @@ function ProjectItem({handleProjectButtonState}) {
             [...Array(PROJECTS_LIST.length)].map( (e, i) => {
                 return <>
                     <section className="flex flex-col items-center">
-                        <div className={`m-8 sm:mx-4 mt-6 overflow-clip rounded-3xl h-64 w-72 v-sm:w-80 sm:w-72 cursor-pointer hover:shadow-3xl`}
+                        <div className={`sm:mx-4 mt-6 overflow-clip rounded-3xl h-64 w-72 v-sm:w-80 sm:w-72 hover:shadow-3xl`}
                             onPointerDown={togglePointerState}
                         >
                             <Image
@@ -42,17 +47,25 @@ function ProjectItem({handleProjectButtonState}) {
                                 height={280}
                                 className="w-full aspect-auto"
                             />
-                            <div className={`relative duration-500 transform ${isPointedDownwards ? "-translate-y-[250%]" : ""} pb-4 pl-2 bg-gray-600/95 text-white h-[100%] flex flex-col pt-20 font-semibold`}>
-                                <h4 className="capitalize">Projet {PROJECTS_LIST[i].title}</h4>
-                                <hr className="rotate-90 transform translate-y-2 border-none bg-secondary h-1 w-10 my-8 text-center" />
-                                <p>{PROJECTS_LIST[i].desc}</p>
-                            </div>
                         </div>
-                        <button className="bg-white border-primary border-2 text-primary font-bold hover:bg-primary self-end hover:text-white px-4 py-2 mr-8 rounded-3xl">Voir plus</button>  
+                        <h4 className="my-4 text-white first-letter:uppercase text-lg">{PROJECTS_LIST[i].title}</h4>
+                        <ChooseProjectCardButton projectName={PROJECTS_LIST[i].title} />
                     </section>
                     <ContentSeparatorBar iteration={i} arraySize={PROJECTS_LIST.length}/>
                 </>;
             })
         }
     </div>;
+}
+
+function ChooseProjectCardButton ({projectName}) {
+    if (projectName == "booki") {
+        return <BookiModalButton />
+    } else if (projectName == "portfolio") {
+        return <PortfolioModalButton />
+    } else if (projectName == "DGT Calculator") {
+        return <DgtButton />
+    } else {
+        return <CanoeButton />
+    }
 }
