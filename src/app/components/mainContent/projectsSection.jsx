@@ -32,7 +32,7 @@ function ProjectItem({handleProjectButtonState}) {
         setPointerState(!isPointedDownwards);
     }
 
-    return <div className={`${handleProjectButtonState ? "hidden" : "block"}  flex flex-col sm:flex-row items-center justify-center`}>
+    return <div className={`${handleProjectButtonState ? "hidden" : "block"}  flex flex-col flex-wrap sm:flex-row items-center justify-center`}>
         {
             [...Array(PROJECTS_LIST.length)].map( (e, i) => {
                 return <>
