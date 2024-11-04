@@ -19,7 +19,7 @@ const businessKeyWords = [
 export default function Overview() {
     return (
         <header id="overview" className="text-white bg-white flex flex-col md:flex-wrap items-start md:items-center overflow-hidden md:overflow-visible relative left-1/2 transform -translate-x-1/2
-                            w-full md:w-[50%] md2:w-[40%] md:my-12 md:rounded-[3rem] md:shadow-3xl pb-4"> 
+                            w-full md:w-[50%] md2:w-[40%] md:my-12 md:rounded-[3rem] md:shadow-3xl mb-4"> 
             <Image 
                 src={code_screen}
                 alt="Capture d'écran de l'environnement de développement"
