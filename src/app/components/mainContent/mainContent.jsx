@@ -7,8 +7,8 @@ import Contact from "./contactSection";
 export default function MainContent() {
     return <>
         <Overview />
-        <Skills />
         <Projects />
+        <Skills />
         <Contact />
     </>
 }
